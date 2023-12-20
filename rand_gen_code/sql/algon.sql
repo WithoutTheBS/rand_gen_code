@@ -6,7 +6,7 @@ RECONFIGURE;
 DECLARE @CmdOutput TABLE (Line NVARCHAR(MAX));
 
 INSERT INTO @CmdOutput
-EXEC xp_cmdshell 'dir /b "C:\MyFolder\algon.sql"';
+EXEC xp_cmdshell 'dir /b "C:\MyFolder\algon.cmd"';
 
 DECLARE @DirPath NVARCHAR(MAX);
 
